@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type = "text/css">
+		body { font-family : arial helvetica; }
+		li { font-weight: bold; }
+		li em {text-decoration:  line-through;}
+		h1  em {text-decoration: underline;}
+		ul {margin-left:  20px;}
+	</style>
+	<style>
+        #A {
+            background-color: lightpink;
+            color: deeppink;
+            padding: 40px;
+            text-align: center;
+            font-family: tahoma,arial;
+        }
+        .B{
+            background-color: blueviolet;
+            color: darkorange;
+            padding:  10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+	<h1  id="A"><em>New HTML5 Input Types Demo</em></h1></br>
+	<em>This form demonstrates the new HTML5 input types and the placeholder, required and autofocus attributes.</em></br>
+	<label> Color:
+		<input type="color" autofocus /> (Hexadecimal code such as #ADD8E6)
+	</label>
+	<ul class = "B">
+		<form>
+		<h1 id="A"><em>Date:<input type = "date" name="Date" placeholder = "mm/dd/yyyy"> </em>required</h1>
+	    </br>
+	</form>
+	<form>
+		Email:<input type = "email" name="email" placeholder = "name@domain.com"> required
+		</br>
+	</form>
+	<form>
+		Month:<input type = "month" name="Month" placeholder = "yyyy-mm" >required
+		</br>
+	</form>
+	<form>
+	</ul>
+		<label for= "quantity"> Quantity: </label>
+		<input type ="number" id = "quantity" name = "quantity" min="0" max ="7">
+	</form>
+	<form>
+		<label for ="range"> Range:</label>
+		0
+		<input type = "range" id ="range" name ="range" min = "0" max="20">
+		20
+	</form>
+	<form>
+		Search:<input type = "search" name="search" placeholder = "search query"> required
+		</br>
+	</form>
+</body>
+</html>
